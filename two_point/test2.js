@@ -6,7 +6,9 @@
 function sol(array){
   //return array.map(ele => ele * ele).sort((a, b) => a>b)
   const result = []
-  for (let i =0,  j=array.length -1; i<=j;) {
+  let i = 0;
+  let j = array.length - 1;
+  while (i<=j) {
     const l = array[i] * array[i]
     const r = array[j] * array[j]
     if (r > l) {
